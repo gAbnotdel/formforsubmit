@@ -1,59 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>form</title>
+  <meta charset="UTF-8">
+  <title>Form</title>
 </head>
 <body>
 
-  <table  cellpadding="30">
-    <tr>
-      <td colspan="2">
-        <img src="https://imgs.search.brave.com/ogxASLODgCmKESqOvfJO6izPaAaH1gwC7gC3I7AaAIU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/YnJpdGFubmljYS5j/b20vMTEvMTQ1NjEx/LTA1MC0xRkYzN0ZG/My9Kb2dnaW5nLmpw/Zz93PTQwMCZoPTMw/MCZjPWNyb3A" alt="solo fiction" width=" 200px" height=" 200px">
-      </td>
-      <td colspan="2">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas 
-          molestie tincidunt bibendum. Praesent placerat tellus nisi, eu ornare eros 
-          ultrices et. Nam suscipit non ipsum at semper. Vivamus.
-        </p>
-      </td>
-    </tr>
+  <form>
+    <table cellpadding="30">
+      <tr>
+        <td colspan="2">
+          <img src="https://imgs.search.brave.com/ogxASLODgCmKESqOvfJO6izPaAaH1gwC7gC3I7AaAIU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/YnJpdGFubmljYS5j/b20vMTEvMTQ1NjEx/LTA1MC0xRkYzN0ZG/My9Kb2dnaW5nLmpw/Zz93PTQwMCZoPTMw/MCZjPWNyb3A" 
+               alt="solo fiction" width="200" height="200">
+        </td>
+        <td colspan="2">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas 
+            molestie tincidunt bibendum. Praesent placerat tellus nisi, eu ornare eros 
+            ultrices et. Nam suscipit non ipsum at semper. Vivamus.
+          </p>
+        </td>
+      </tr>
 
-    <tr>
-      <td>Name:</td>
-      <td><input type="text" name="name"></td>
-            <td><strong>Gender:</strong><br>
-        <input type="radio" name="gender" value="male"> Male<br>
-        <input type="radio" name="gender" value="female"> Female
-      </td>
-    </tr>
+      <tr>
+        <td><label for="name">Name:</label></td>
+        <td><input type="text" name="name" id="name"></td>
+        <td colspan="2">
+          <strong>Gender:</strong><br>
+          <input type="radio" name="gender" value="male" id="male">
+          <label for="male">Male</label><br>
+          <input type="radio" name="gender" value="female" id="female">
+          <label for="female">Female</label>
+        </td>
+      </tr>
 
-    <tr>
-      <td>Address:</td>
-      <td><input type="text" name="address"></td>
-     <td rowspan="2"> 
-      <td rowspan="3">
-    <strong>Hobbies:</strong><br>
-        <input type="checkbox" name="hobby1"> Swimming<br>
-        <input type="checkbox" name="hobby2"> Biking<br>
-        <input type="checkbox" name="hobby3"> Reading<br>
-        <input type="checkbox" name="hobby4"> Photography<br>
-        <input type="checkbox" name="hobby5"> Drawing<br>
-      </td>
-    </tr>
+      <tr>
+        <td><label for="address">Address:</label></td>
+        <td><input type="text" name="address" id="address"></td>
+        <td colspan="2" rowspan="3">
+          <strong>Hobbies:</strong><br>
+          <input type="checkbox" name="hobby1" id="hobby1">
+          <label for="hobby1">Swimming</label><br>
+          <input type="checkbox" name="hobby2" id="hobby2">
+          <label for="hobby2">Biking</label><br>
+          <input type="checkbox" name="hobby3" id="hobby3">
+          <label for="hobby3">Reading</label><br>
+          <input type="checkbox" name="hobby4" id="hobby4">
+          <label for="hobby4">Photography</label><br>
+          <input type="checkbox" name="hobby5" id="hobby5">
+          <label for="hobby5">Drawing</label>
+        </td>
+      </tr>
 
-    <tr>
-      <td>Email-Ad:</td>
-      <td><input type="email" name="email"></td>
-    </tr>
+      <tr>
+        <td><label for="email">Email-Ad:</label></td>
+        <td><input type="email" name="email" id="email"></td>
+      </tr>
 
-    <tr>
-      <td>Contact Number:</td>
-      <td><input type="text" name="contact"></td>
-    </tr>
-  </table>
+      <tr>
+        <td><label for="contact">Contact Number:</label></td>
+        <td><input type="text" name="contact" id="contact"></td>
+      </tr>
+    </table>
+  </form>
 
 </body>
 </html>
-
-     
